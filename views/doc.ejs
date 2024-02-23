@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnyCode Docs | <%= page.data.title %></title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter");
+        @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+        * { font-family: "Inter", sans-serif; }
+
+        span {
+            vertical-align: middle;
+            color: #084f92;
+        }
+    </style>
+
+    <style type="text/tailwindcss">
+        h1 {
+            @apply font-semibold text-3xl
+        }
+
+        h2 {
+            @apply font-semibold text-2xl
+        }
+
+        h3 {
+            @apply font-semibold text-xl
+        }
+
+        a {
+            @apply text-[#084f92] cursor-pointer
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="z-10 bg-[#0a6ac4] border-[#084f92] border-b-4 p-2">
+        <h1 class="text-2xl text-white font-semibold ">
+            AnyCode Docs
+        </h1>
+    </div>
+
+    <div class="border-[#dbdbdb] border-r-4 bg-[#f0f0f0] w-[22%] h-full fixed left-0 p-2 pt-3">
+        <% pages.map (doc => { %>
+            <div class="bg-[#dbdbdb] rounded-md p-2 mb-2">
+                <span class="material-symbols-outlined">
+                    <%= doc.icon %>
+                </span>
+                <a href="/docs/<%= doc.path %>"><%- doc.title %></a>
+            </div>
+        <% }) %>
+    </div>
+
+    <div class="ml-[23.25%] pt-3 leading-loose">
+        <%- page.content %>
+    </div>
+</body>
+</html>
