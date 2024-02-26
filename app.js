@@ -27,7 +27,11 @@ docs.sort((_1, _2) => {
 console.log("[AnyDocs] Indexed files complete!")
 console.log(docs)
 
-app.get("/docs/:page", async (req, res) => {
+app.get("/", async (req, res) => {
+    res.redirect('/intro')
+})
+
+app.get("/:page", async (req, res) => {
     try {
         
         const file = await fs.promises.readFile(`./docs/${req.params.page}.md`, "utf-8")
