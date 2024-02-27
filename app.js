@@ -18,14 +18,20 @@ fs.readdirSync("./docs/").forEach((file) => {
     })
 })
 
+const indextime = "Time taken to index pages";
+
+console.time("indextime");
+
 docs.sort((_1, _2) => {
     if (_2.id > _1.id) return -1
     else if (_2.id < _1.id) return 1
     else return 0
 })
 
+console.timeEnd("indextime");
 console.log("[AnyDocs] Indexed files complete!")
 console.log(docs)
+
 
 app.get("/", async (req, res) => {
     res.redirect('/intro')
