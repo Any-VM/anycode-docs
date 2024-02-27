@@ -44,6 +44,7 @@ app.get("/:page", async (req, res) => {
         })
     } catch (err) {
         console.error(`[AnyDocs] 404 at ${req.params.page}`)
+        res.status(404).render("404.ejs");
     }
 })
 
