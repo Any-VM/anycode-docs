@@ -17,6 +17,21 @@
             vertical-align: middle;
             color: #084f92;
         }
+
+        @media only screen and (max-width: 768px) {
+            .mobile-center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .mobile-center .material-symbols-outlined {
+                font-size: 24px;
+                text-align: center;
+            }
+            .mobile-center a {
+                display: none;
+            }
+        }
     </style>
 
     <style type="text/tailwindcss">
@@ -47,7 +62,7 @@
 
     <div class="border-[#dbdbdb] border-r-4 bg-[#f0f0f0] w-[22%] h-full fixed left-0 p-2 pt-3">
         <% pages.map (doc => { %>
-            <div class="bg-[#dbdbdb] rounded-md p-2 mb-2">
+            <div class="bg-[#dbdbdb] rounded-md p-2 mb-2 mobile-center">
                 <span class="material-symbols-outlined">
                     <%= doc.icon %>
                 </span>
