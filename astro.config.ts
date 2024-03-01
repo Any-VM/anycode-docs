@@ -5,9 +5,6 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
 	site: "https://docs.anyvm.tech",
-  redirects: {
-    '/guides': '/guides/intro/'
-  },
   integrations: [starlight({
     editLink: {
       baseUrl: 'https://github.com/any-vm/anycode-docs/edit/main/',
@@ -21,22 +18,14 @@ export default defineConfig({
     social: {
       github: 'https://github.com/any-vm/anycode',
       discord: "https://discord.gg/6cpcbKwjBn"
-    },
-    sidebar: [{
-      label: 'Docs',
-      items: [
-      // Each item here is one entry in the navigation menu.
+    },  
+    sidebar: [
       {
-        label: 'Introduction',
-        link: '/guides/intro/'
-      }, {
-        label: "Configuration",
-        link: "/guides/config/"
-      }, {
-        label: "Services",
-        link: "/guides/services/"
-      }]
-    }],
+        label: 'Reference',
+        // Autogenerate a group of links for the 'guides' directory.
+        autogenerate: { directory: 'reference' },
+      },
+    ],
     customCss: ['./src/tailwind.css']
   }), tailwind({
     applyBaseStyles: false
