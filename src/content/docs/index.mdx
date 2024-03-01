@@ -1,19 +1,19 @@
 ---
 title: Docs
-description: Docs for AnyCode, a platform for serverless workers .
+description: Docs for AnyCode, a platform for serverless workers.
 template: splash
 hero:
   title: |
     AnyCode
     <span
-      class="font-black text-transparent
+      class="font-semibold text-transparent
         bg-clip-text bg-gradient-to-b
         from-accent-700 to-accent-400
         dark:from-accent-500 dark:to-accent-200"
     >
       Docs
     </span>
-  tagline: Get started with AnyCode today!
+  tagline: Get started with AnyCode, a platform for serverless workers.
   image:
     file: ../../assets/any-vm.png
   actions:
@@ -21,13 +21,17 @@ hero:
       link: /reference
       icon: right-arrow
       variant: primary
+    - text: GitHub
+      link: https://github.com/any-vm/anycode
+      icon: github
+      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Quick Links
 
-<CardGrid stagger>
+<CardGrid>
 	<Card title="Writing scripts" icon="add-document">
 		Learn how to write scripts in AnyCode.
 	</Card>

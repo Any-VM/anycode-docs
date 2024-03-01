@@ -30,7 +30,7 @@ export default defineConfig({
     },  
     sidebar: [
       {
-        label: 'Reference',
+        label: 'Start Here',
         // Autogenerate a group of links for the 'guides' directory.
         autogenerate: { directory: 'reference' },
       },
