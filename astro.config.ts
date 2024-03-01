@@ -11,9 +11,13 @@ export default defineConfig({
     '/guides': '/guides/intro/'
   },
   integrations: [starlight({
+    editLink: {
+      baseUrl: 'https://github.com/any-vm/anycode-docs/edit/main/',
+    },
     favicon: "./src/assets/any-vm.png",
     logo: {
       src: "./src/assets/any-vm.png"
+      
     },
     title: 'AnyCode Docs',
     social: {
