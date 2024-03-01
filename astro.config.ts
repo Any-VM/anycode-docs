@@ -6,6 +6,15 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
 	site: "https://docs.anyvm.tech",
   integrations: [starlight({
+    head: [
+      {
+        tag: "meta",
+        attrs: {
+          property: "og:image",
+          content: "https://docs.anyvm.tech/logo.png"
+        }
+      }
+    ],
     editLink: {
       baseUrl: 'https://github.com/any-vm/anycode-docs/edit/main/',
     },
@@ -14,7 +23,7 @@ export default defineConfig({
       src: "./src/assets/any-vm.png"
       
     },
-    title: 'AnyCode Docs',
+    title: 'AnyCode',
     social: {
       github: 'https://github.com/any-vm/anycode',
       discord: "https://discord.gg/6cpcbKwjBn"
