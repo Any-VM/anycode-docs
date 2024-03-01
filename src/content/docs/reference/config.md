@@ -31,15 +31,23 @@ provided is NOT usable.
 
 ## Keys & Values
 
+### Name
 `name`: The name of the given worker
 
-**Usage**
-```json
-"name": "MyWorker"
-```
-
+### Main
 `main`: Your main program file
 
-**Usage**
-```json
-"main": "test.py"
+### Key
+`key`: Your account's key
+
+### Subdomain
+`subdomain`: Your instance's subdomain
+
+### Domain
+`domain`: Your instance's domain
+
+### Config
+`config`: Your program's config file
+
+### Extras
+Additional details (to be documented)
