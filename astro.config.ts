@@ -17,9 +17,9 @@ export default defineConfig({
     editLink: {
       baseUrl: 'https://github.com/any-vm/anycode-docs/edit/main/',
     },
-    favicon: "./src/assets/any-vm.png",
+    favicon: "./src/assets/anycode.svg",
     logo: {
-      src: "./src/assets/any-vm.png"
+      src: "./src/assets/anycode.svg"
       
     },
     title: 'AnyCode',
@@ -31,7 +31,7 @@ export default defineConfig({
       {
         label: 'Start Here',
         // Autogenerate a group of links for the 'guides' directory.
-        autogenerate: { directory: 'reference' },
+        autogenerate: { directory: 'start-here' },
       },
     ],
     customCss: ['./src/index.css']

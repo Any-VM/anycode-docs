@@ -2,7 +2,6 @@
 body {
   font-family: "Inter", sans-serif;
 }
-/* Dark mode colors. */
 :root {
   --sl-color-accent-low: #00273d;
   --sl-color-accent: #0071a7;
@@ -16,24 +15,22 @@ body {
   --sl-color-gray-6: #262629;
   --sl-color-black: #181819;
 }
-/* Light mode colors. */
 :root[data-theme="light"] {
-  --sl-color-accent-low: #b0deff;
-  --sl-color-accent: #0073aa;
-  --sl-color-accent-high: #003653;
-  --sl-color-white: #181819;
-  --sl-color-gray-1: #262629;
-  --sl-color-gray-2: #38383a;
-  --sl-color-gray-3: #58585a;
-  --sl-color-gray-4: #8b8b8e;
-  --sl-color-gray-5: #c2c2c3;
-  --sl-color-gray-6: #ededef;
-  --sl-color-gray-7: #f6f6f7;
-  --sl-color-black: #ffffff;
+  --sl-color-accent-low: #00273d;
+  --sl-color-accent: #0071a7;
+  --sl-color-accent-high: #92d1fe;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #ededef;
+  --sl-color-gray-2: #c2c2c3;
+  --sl-color-gray-3: #8b8b8e;
+  --sl-color-gray-4: #58585a;
+  --sl-color-gray-5: #38383a;
+  --sl-color-gray-6: #262629;
+  --sl-color-black: #181819;
 }
 [data-has-hero] .page {
   background: linear-gradient(
-    45deg,
+    60deg,
     rgba(23, 37, 84, 1) 0%,
     rgba(9, 9, 11, 1) 100%
   );
@@ -44,6 +41,20 @@ body {
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
 }
+.header {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
 [data-has-hero] .hero > img {
-  filter: drop-shadow(0 0 3rem var(--overlay-blurple));
+  background-color: transparent;
+  /* filter: drop-shadow(0 0 3rem rgba(23, 37, 84, 1)); */
+}
+.card {
+  border-radius: 12px;
+}
+.hero-styled-text {
+  font-weight: 700;
+  color: var(--sl-color-accent-high);
+  text-shadow: 0 0 1rem rgba(23, 37, 84, 1);
 }
