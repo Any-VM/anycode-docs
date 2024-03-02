@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://docs.anyvm.tech",
+	site: "https://code.anyvm.tech",
 	integrations: [
 		starlight({
 			head: [
@@ -12,7 +12,7 @@ export default defineConfig({
 					tag: "meta",
 					attrs: {
 						property: "og:image",
-						content: "https://docs.anyvm.tech/logo.png",
+						content: "https://code.anyvm.tech/logo.png",
 					},
 				},
 			],
