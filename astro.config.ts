@@ -39,6 +39,12 @@ export default defineConfig({
 						directory: "start-here",
 					},
 				},
+				{
+					label: "Other Info",
+					autogenerate: {
+						directory: "other-info",
+					},
+				},
 			],
 			customCss: ["./src/index.css"],
 		}),

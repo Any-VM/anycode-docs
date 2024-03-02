@@ -1,0 +1,36 @@
+---
+const contributorGithub = [
+	"incognitotgt",
+	"subby2006",
+	"proudparrot2",
+	"illusiontba",
+	"skullcrushercmd",
+	"lolzthedev",
+];
+---
+
+<main class="">
+	<div class="container">
+		<div class="mt-4 grid grid-cols-2 gap-4">
+			{
+				contributorGithub.map(async (contributor: string) => {
+					return (
+						<div class="flex flex-col items-center">
+							<img
+								src={`https://github.com/${contributor}.png`}
+								alt={contributor}
+								class="h-24 w-24 rounded-full"
+							/>
+							<a
+								href={`github.com/${contributor}`}
+								class="text-center text-lg font-bold"
+							>
+								{contributor}
+							</a>
+						</div>
+					);
+				})
+			}
+		</div>
+	</div>
+</main>
