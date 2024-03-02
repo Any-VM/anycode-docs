@@ -15,6 +15,13 @@ export default defineConfig({
 						content: "https://code.anyvm.tech/logo.png",
 					},
 				},
+				{
+					tag: "link",
+					attrs: {
+						rel: "icon",
+						href: "/logo.png",
+					},
+				},
 			],
 			expressiveCode: {
 				themes: ["github-dark-dimmed"],

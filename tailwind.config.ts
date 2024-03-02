@@ -13,7 +13,7 @@ const config: Config = {
 				"gradient-to": "var(--gradient-to)",
 			},
 			fontFamily: {
-				sans: ["Inter var", "Inter", "sans-serif"],
+				sans: ["Lexend", "sans-serif"],
 				mono: ["JetBrains Mono", "monospace"],
 			},
 		},

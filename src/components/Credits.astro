@@ -1,36 +1,38 @@
 ---
+import { Image } from "astro:assets";
+const { className } = Astro.props;
 const contributorGithub = [
-	"incognitotgt",
-	"subby2006",
-	"proudparrot2",
+	"boxical",
 	"illusiontba",
-	"skullcrushercmd",
+	"incognitotgt",
+	"localuser-isback",
 	"lolzthedev",
+	"notplayingallday383",
+	"proudparrot2",
+	"skullcrushercmd",
+	"subby2006",
 ];
 ---
 
-<main class="">
-	<div class="container">
-		<div class="mt-4 grid grid-cols-2 gap-4">
-			{
-				contributorGithub.map(async (contributor: string) => {
-					return (
-						<div class="flex flex-col items-center">
-							<img
-								src={`https://github.com/${contributor}.png`}
-								alt={contributor}
-								class="h-24 w-24 rounded-full"
-							/>
-							<a
-								href={`github.com/${contributor}`}
-								class="text-center text-lg font-bold"
-							>
-								{contributor}
-							</a>
-						</div>
-					);
-				})
-			}
-		</div>
+<main class={className}>
+	<div class="mx-auto flex flex-wrap items-center justify-center">
+		{
+			contributorGithub.map((contributor: string) => {
+				return (
+					<div class="m-5 flex flex-col items-center">
+						<Image
+							src={`https://github.com/${contributor}.png`}
+							width={100}
+							height={100}
+							alt={contributor}
+							loading="eager"
+							class="h-24 w-24 rounded-full"
+						/>
+
+						<a href={`https://github.com/${contributor}`}>{contributor}</a>
+					</div>
+				);
+			})
+		}
 	</div>
 </main>
