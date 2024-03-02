@@ -9,6 +9,8 @@ const config: Config = {
 			colors: {
 				gray: colors.zinc,
 				accent: colors.blue,
+				"gradient-from": "var(--gradient-from)",
+				"gradient-to": "var(--gradient-to)",
 			},
 			fontFamily: {
 				sans: ["Inter var", "Inter", "sans-serif"],

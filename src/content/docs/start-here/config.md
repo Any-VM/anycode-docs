@@ -9,17 +9,17 @@ Here is a simple example of how a config file should look
 
 ```json
 {
-    "name": "MyWorker",
-    "main": "index.js",
-    "key": "myAccountKey",
-    "subdomain": "cool.example.com",
-    "domain": "example.com",
-    "config": "config.example.json",
-    "extras": {
-        "enable_paid": true
-        "runtime": ""
-        "build": "npm i"
-    }
+	"name": "MyWorker",
+	"main": "index.js",
+	"key": "myAccountKey",
+	"subdomain": "cool.example.com",
+	"domain": "example.com",
+	"config": "config.example.json",
+	"extras": {
+		"enable_paid": true,
+		"runtime": "node",
+		"build": "npm i"
+	}
 }
 ```
 

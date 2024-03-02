@@ -3,16 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+	--gradient-from: #172554;
+	--gradient-to: #09090b;
+}
+:root[data-theme="light"] {
+	--gradient-from: #3b82f6;
+	--gradient-to: #fafafa;
+}
 [data-has-hero] .page {
-	@apply bg-gradient-to-br from-accent-950 to-zinc-950;
+	@apply bg-gradient-to-tl from-gradient-from to-gradient-to;
 }
 [data-has-hero] header {
 	@apply border-b-2 border-transparent bg-transparent backdrop-blur-lg;
 }
 
-[data-has-hero] .hero > img {
-	@apply bg-transparent shadow-lg;
-}
 .card {
-	@apply rounded-2xl border border-blue-800 !bg-accent-800/10 hover:border-blue-500;
+	@apply rounded-2xl border border-accent-500 !bg-accent-800/10 bg-accent-200  hover:border-accent-800 dark:border-accent-800 dark:bg-accent-900 hover:dark:border-accent-500;
 }
