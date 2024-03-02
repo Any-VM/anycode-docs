@@ -25,29 +25,36 @@ Here is a simple example of how a config file should look
 
 :::caution
 Do not use the example above for your config!
-Instead, please build off of it since the information 
+Instead, please build off of it since the information
 provided is NOT usable.
 :::
 
 ## Keys & Values
 
 ### Name
+
 `name`: The name of the given worker
 
 ### Main
+
 `main`: Your main program file
 
 ### Key
+
 `key`: Your account's key
 
 ### Subdomain
+
 `subdomain`: Your instance's subdomain
 
 ### Domain
+
 `domain`: Your instance's domain
 
 ### Config
+
 `config`: Your program's config file
 
 ### Extras
+
 Additional details (to be documented)

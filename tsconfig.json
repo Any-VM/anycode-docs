@@ -1,4 +1,4 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "exclude": ["dist/client/pagefind"]
+	"extends": "astro/tsconfigs/strict",
+	"exclude": ["dist/client/pagefind"]
 }
