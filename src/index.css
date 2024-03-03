@@ -14,7 +14,7 @@
 	--bg-lighter: #cbd5e1;
 }
 [data-has-hero] .page {
-	@apply from-background to-bg-lighter bg-gradient-to-br;
+	@apply bg-gradient-to-br from-background to-bg-lighter;
 }
 .header {
 	@apply bg-transparent backdrop-blur-lg;
