@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
-
+import codeTheme from "./code-theme.json";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://code.anyvm.tech",
@@ -24,7 +24,7 @@ export default defineConfig({
 				},
 			],
 			expressiveCode: {
-				themes: ["github-dark-dimmed"],
+				themes: [codeTheme],
 			},
 			editLink: {
 				baseUrl: "https://github.com/any-vm/anycode-docs/edit/main/",

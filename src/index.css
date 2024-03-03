@@ -1,23 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import "./fonts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-	--gradient-from: #172554;
-	--gradient-to: #09090b;
+:root,
+::backdrop {
+	--background: #09090b;
+	--sl-color-gray-6: var(--background);
+	--sl-color-bg: var(--background);
 }
 :root[data-theme="light"] {
-	--gradient-from: #bfdbfe;
-	--gradient-to: #fafafa;
+	--background: #fafafa;
 }
 [data-has-hero] .page {
-	@apply bg-gradient-to-tl from-gradient-from to-gradient-to;
+	@apply bg-background;
 }
-[data-has-hero] header {
-	@apply border-b-2 border-transparent bg-transparent backdrop-blur-lg;
+.header {
+	@apply bg-transparent backdrop-blur-lg;
 }
 
 .card {
-	@apply rounded-2xl border border-accent-500 !bg-accent-800/10 bg-accent-100  hover:border-accent-800 dark:border-accent-800 dark:bg-accent-900 hover:dark:border-accent-500;
+	@apply rounded-xl border border-accent-500 !bg-accent-800/10 bg-accent-100  hover:border-accent-800 dark:border-accent-800 dark:bg-accent-900 hover:dark:border-accent-500;
 }

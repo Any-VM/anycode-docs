@@ -8,13 +8,12 @@ const config: Config = {
 		extend: {
 			colors: {
 				gray: colors.zinc,
-				accent: colors.blue,
-				"gradient-from": "var(--gradient-from)",
-				"gradient-to": "var(--gradient-to)",
+				accent: colors.zinc,
+				background: "var(--background)",
 			},
 			fontFamily: {
-				sans: ["Lexend", "sans-serif"],
-				mono: ["JetBrains Mono", "monospace"],
+				sans: ["Geist Sans", "sans-serif"],
+				mono: ["Geist Mono", "monospace"],
 			},
 		},
 	},
