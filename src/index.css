@@ -4,15 +4,17 @@
 @tailwind utilities;
 :root,
 ::backdrop {
-	--background: #09090b;
+	--background: #020617;
+	--bg-lighter: #1e293b;
 	--sl-color-gray-6: var(--background);
 	--sl-color-bg: var(--background);
 }
 :root[data-theme="light"] {
 	--background: #fafafa;
+	--bg-lighter: #cbd5e1;
 }
 [data-has-hero] .page {
-	@apply bg-background;
+	@apply from-background to-bg-lighter bg-gradient-to-br;
 }
 .header {
 	@apply bg-transparent backdrop-blur-lg;

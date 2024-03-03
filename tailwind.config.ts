@@ -7,9 +7,10 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				gray: colors.zinc,
-				accent: colors.zinc,
+				gray: colors.slate,
+				accent: colors.slate,
 				background: "var(--background)",
+				"bg-lighter": "var(--bg-lighter)",
 			},
 			fontFamily: {
 				sans: ["Geist Sans", "sans-serif"],
