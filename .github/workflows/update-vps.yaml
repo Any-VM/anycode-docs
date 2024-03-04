@@ -1,6 +1,9 @@
 name: Update Docs
 run-name: Update Docs
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   update-vps:
     runs-on: ubuntu-latest
