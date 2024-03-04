@@ -7,14 +7,13 @@ jobs:
     steps:
       - name: Update
         uses: appleboy/ssh-action@v1.0.3
-        env:
-          NODE_OPTIONS: "--max-old-space-size=8192"
         with:
           host: ${{ secrets.HOST }}
           username: root
           password: ${{ secrets.PASSWORD }}
           port: 22
           script: |
+            export NODE_OPTIONS=--max-old-space-size=8192
             cd /var/www/anycode-docs
             git pull
             pnpm i
