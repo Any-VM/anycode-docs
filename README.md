@@ -2,8 +2,8 @@
 
 Documentation website for AnyCode configuration and other tools or utilities.
 
-# How to start
+## Contributing
 
-```
-pnpm i, pnpm build and pnpm dev
-```
+To contribute, make a pull request. The markdown files are in `src/content/docs`
+
+The docs use [Starlight](https://starlight.astro.build). 
