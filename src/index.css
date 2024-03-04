@@ -14,12 +14,12 @@
 	--bg-lighter: #cbd5e1;
 }
 [data-has-hero] .page {
-	@apply bg-gradient-to-br from-background to-bg-lighter;
+	@apply from-background to-bg-lighter bg-gradient-to-br;
 }
 .header {
 	@apply bg-transparent backdrop-blur-lg;
 }
 
 .card {
-	@apply rounded-xl border border-accent-500 !bg-accent-800/10 bg-accent-100  hover:border-accent-800 dark:border-accent-800 dark:bg-accent-900 hover:dark:border-accent-500;
+	@apply border-accent-500 !bg-accent-800/10 bg-accent-100 hover:border-accent-800 dark:border-accent-800  dark:bg-accent-900 hover:dark:border-accent-500 rounded-xl border;
 }
