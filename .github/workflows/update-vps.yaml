@@ -1,0 +1,19 @@
+name: Update Docs
+run-name: Update Docs
+on: [push]
+jobs:
+  update-vps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: root
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            cd /var/www/anycode-docs
+            git pull
+            pnpm i
+            pnpm build
