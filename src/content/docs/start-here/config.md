@@ -3,6 +3,7 @@ title: Configuring AnyCode
 description: How to configure AnyCode
 ---
 
+# File Configuration
 AnyCode is quick and easy when it comes to configuration.
 
 Here is a simple example of how a config file should look
