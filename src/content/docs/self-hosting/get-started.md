@@ -1,0 +1,83 @@
+---
+title: Get Started
+description: How to setup Anycode local server
+---
+
+## Setting Up a Local Server
+
+```
+npm install -g pnpm
+pnpm install
+pnpm dev
+```
+
+## Configuring .env
+
+Now that you have a working local server, You're going to stop it and now you're going to make a .env file and follow the example below.
+
+```bash
+// .env
+DATABASE_URL=""
+NEXTAUTH_URL=""
+NEXTAUTH_SECRET=""
+SENDGRID_API=""
+EMAIL_FROM=""
+EMAIL_SERVER_HOST=""
+EMAIL_SERVER_PORT=""
+EMAIL_SERVER_USER=""
+# This can be changed to a password to any SMTP server
+EMAIL_SERVER_PASSWORD=$SENDGRID_API
+GITHUB_ID=""
+GITHUB_SECRET=""
+DISCORD_CLIENT_ID=""
+DISCORD_CLIENT_SECRET=""
+```
+
+## Values
+
+### General
+
+`DATABASE_URL` is the URL to your database. If you're using a local database, you can use `postgresql://postgres:password@localhost:5432/anycode` as the value.
+
+`NEXTAUTH_URL` is the public URL for your AnyCode instance.
+
+`NEXTAUTH_SECRET` is a randomly generated string that is used to encrypt the email verification tokens. You can generate a string using `openssl rand -base64 32`.
+
+### Email
+
+`SENDGRID_API` can be used if you are using SendGrid to send emails.
+
+`EMAIL_FROM` is the email address that will be used to send emails.
+
+`EMAIL_SERVER_HOST` is the SMTP server host.
+
+`EMAIL_SERVER_PORT` is the SMTP server port.
+
+`EMAIL_SERVER_USER` is the SMTP server username.
+
+`EMAIL_SERVER_PASSWORD` is the SMTP server password.
+
+### OAuth
+
+`GITHUB_ID` is the GitHub OAuth client ID.
+
+`GITHUB_SECRET` is the GitHub OAuth client secret.
+
+`DISCORD_CLIENT_ID` is the Discord OAuth client ID.
+
+`DISCORD_CLIENT_SECRET` is the Discord OAuth client secret.
+
+## Setup
+
+Next, setup PostgreSQL.
+You can easily setup a PostgreSQL database using Docker by running `docker run --name anyvm-postgres -p 5432:5432 -e POSTGRES_PASSWORD=replaceme -d postgres`, and updating your env file accordingly.
+
+After you have created the .env file, make sure that your database is running, and run the following commands.
+
+```bash
+pnpm install
+pnpm db
+pnpm build
+```
+
+Now you can start the server using `pnpm start`. You should now be able to access your AnyCode instance at localhost:3000, which you can proxy through something such as Nginx or Caddy to make it accessible from the internet.
