@@ -16,6 +16,7 @@ pnpm dev
 Now that you have a working local server, You're going to stop it and now you're going to make a .env file and follow the example below.
 
 ```bash
+// .env
 DATABASE_URL=""
 NEXTAUTH_URL=""
 NEXTAUTH_SECRET=""
