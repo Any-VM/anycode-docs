@@ -54,7 +54,7 @@ export const AnyVM = (props: IconProps) => (
         rx="20"
         transform="matrix(0.866025 -0.5 0 1 287.232 306.138)"
         stroke="#5C7FB3"
-        stroke-width="4"
+        strokeWidth="4"
       />
     </g>
     <g filter="url(#filter1_dddddd_1_10)">
@@ -73,7 +73,7 @@ export const AnyVM = (props: IconProps) => (
         rx="20"
         transform="matrix(0.866025 0.5 0 1 124.232 214.134)"
         stroke="#5C7FB3"
-        stroke-width="4"
+        strokeWidth="4"
       />
     </g>
     <g filter="url(#filter2_dddddd_1_10)">
@@ -91,7 +91,7 @@ export const AnyVM = (props: IconProps) => (
         rx="20"
         transform="matrix(0.866025 0.5 -0.866025 0.5 286.088 118)"
         stroke="#5C7FB3"
-        stroke-width="4"
+        strokeWidth="4"
       />
     </g>
     <path
@@ -115,8 +115,8 @@ export const AnyVM = (props: IconProps) => (
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M299.963 176.702C299.952 178.826 296.961 180.553 293.281 180.559L243.412 180.641L243.27 209.433C243.259 211.558 240.268 213.285 236.588 213.291C232.909 213.297 229.935 211.58 229.945 209.455L230.106 176.817C230.117 174.692 233.108 172.965 236.787 172.959L293.319 172.866C296.999 172.86 299.973 174.577 299.963 176.702ZM330.9 194.563C334.579 194.557 337.554 196.274 337.543 198.399L337.382 231.038C337.372 233.162 334.38 234.889 330.701 234.895L274.169 234.988C270.489 234.994 267.515 233.277 267.526 231.152C267.536 229.028 270.527 227.301 274.207 227.295L324.076 227.213L324.219 198.421C324.229 196.296 327.22 194.569 330.9 194.563Z"
       fill="black"
     />
@@ -128,9 +128,9 @@ export const AnyVM = (props: IconProps) => (
         width="402.82"
         height="500.485"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -247,9 +247,9 @@ export const AnyVM = (props: IconProps) => (
         width="402.82"
         height="500.485"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -366,9 +366,9 @@ export const AnyVM = (props: IconProps) => (
         width="536.854"
         height="414.121"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"

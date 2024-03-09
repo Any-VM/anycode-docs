@@ -33,21 +33,23 @@ export default function Home() {
       <div className="flex mx-20 flex-col min-h-screen items-center">
         <div className="flex-row flex h-screen justify-center items-center">
           <section className="mr-1/2 justify-start">
-            <h1 className="font-sans text-5xl text-left font-bold">AnyCode</h1>
-            <p className="text-lg text-left">
+            <h1 className="font-sans text-5xl text-left font-bold text-transparent bg-gradient-to-tr from-muted-foreground to-foreground  bg-clip-text">
+              AnyCode
+            </h1>
+            <p className="text-lg text-left my-4">
               AnyCode is a platform designed for serverless workers. Simple to
               use and fast to set up. Quick, easy, and effective
               configuration—get everything up and running in less than three
               minutes! Just sign up with an email and get started!
             </p>
-            <section className="flex-row space-x-2 mt-2">
-              <Button asChild>
+            <section className="flex-row space-x-2 mt-2 flex">
+              <Button asChild size="lg">
                 <Link href="/docs">
                   Get Started
                   <ChevronRight className="inline size-4 ml-2" />
                 </Link>
               </Button>
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" size="lg">
                 <Link href="https://github.com/any-vm/anycode">
                   <GitHub className="inline size-4 mr-2" /> GitHub
                 </Link>
@@ -58,7 +60,7 @@ export default function Home() {
             <AnyVM className="h-96 w-96" />
           </section>
         </div>
-        <section className="-mt-24 mb-4">
+        <section className="-mt-56 mb-20">
           <h2 className="text-3xl font-bold my-8">Features</h2>
           <div className="grid grid-cols-2 gap-4">
             {tagLines.map((tagLine) => (
