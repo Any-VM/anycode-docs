@@ -1,0 +1,25 @@
+name: Update Docs
+run-name: Update Docs
+on:
+  push:
+    branches:
+      - main
+jobs:
+  update-vps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: root
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            export NODE_OPTIONS=--max-old-space-size=8192
+            cd /var/www/anycode-docs
+            git pull
+            pnpm i
+            pm2 stop anycode-docs
+            pnpm build
+            pm2 start anycode-docs
