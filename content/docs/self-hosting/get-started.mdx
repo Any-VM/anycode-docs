@@ -2,21 +2,26 @@
 title: Get Started
 description: How to setup Anycode local server
 ---
+import { Step, Steps } from 'fumadocs-ui/components/steps';
 
-## Setting Up a Local Server
+<Steps>
+<Step>
+## Setting Up a Testing Server
+
+This is a Next.js development server and **should not be used for production**.
 
 ```
 npm install -g pnpm
 pnpm install
 pnpm dev
 ```
-
+</Step>
+<Step>
 ## Configuring .env
 
 Now that you have a working local server, You're going to stop it and now you're going to make a .env file and follow the example below.
 
-```bash
-// .env
+```bash title=".env"
 DATABASE_URL=""
 NEXTAUTH_URL=""
 NEXTAUTH_SECRET=""
@@ -32,10 +37,10 @@ GITHUB_SECRET=""
 DISCORD_CLIENT_ID=""
 DISCORD_CLIENT_SECRET=""
 ```
+</Step>
+### Values
 
-## Values
-
-### General
+#### General
 
 `DATABASE_URL` is the URL to your database. If you're using a local database, you can use `postgresql://postgres:password@localhost:5432/anycode` as the value.
 
@@ -67,7 +72,8 @@ DISCORD_CLIENT_SECRET=""
 
 `DISCORD_CLIENT_SECRET` is the Discord OAuth client secret.
 
-## Setup
+<Step>
+## Deploying to Production
 
 Next, setup PostgreSQL.
 You can easily setup a PostgreSQL database using Docker by running `docker run --name anyvm-postgres -p 5432:5432 -e POSTGRES_PASSWORD=replaceme -d postgres`, and updating your env file accordingly.
@@ -79,5 +85,7 @@ pnpm install
 pnpm db
 pnpm build
 ```
+</Step>
 
 Now you can start the server using `pnpm start`. You should now be able to access your AnyCode instance at localhost:3000, which you can proxy through something such as Nginx or Caddy to make it accessible from the internet.
+</Steps>
