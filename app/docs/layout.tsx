@@ -1,4 +1,4 @@
-import { AnyVM, Discord, GitHub } from "@/components/icons";
+import { AnyVM, Discord } from "@/components/icons";
 import { pageTree } from "../source";
 import { DocsLayout, type DocsLayoutProps } from "fumadocs-ui/layout";
 import type { ReactNode } from "react";

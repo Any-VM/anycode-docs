@@ -10,7 +10,7 @@ module.exports = {
     "./mdx-components.{ts,tsx}",
     "./node_modules/fumadocs-ui/dist/**/*.js",
   ],
-  theme : {
+  theme: {
     extend: {
       colors: {
         border: "hsl(var(--border))",

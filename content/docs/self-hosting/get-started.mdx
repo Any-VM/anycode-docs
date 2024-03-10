@@ -2,7 +2,8 @@
 title: Get Started
 description: How to setup Anycode local server
 ---
-import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+import { Step, Steps } from "fumadocs-ui/components/steps";
 
 <Steps>
 <Step>
@@ -15,6 +16,7 @@ npm install -g pnpm
 pnpm install
 pnpm dev
 ```
+
 </Step>
 <Step>
 ## Configuring .env
@@ -37,6 +39,7 @@ GITHUB_SECRET=""
 DISCORD_CLIENT_ID=""
 DISCORD_CLIENT_SECRET=""
 ```
+
 </Step>
 ### Values
 
@@ -85,7 +88,9 @@ pnpm install
 pnpm db
 pnpm build
 ```
+
 </Step>
 
 Now you can start the server using `pnpm start`. You should now be able to access your AnyCode instance at localhost:3000, which you can proxy through something such as Nginx or Caddy to make it accessible from the internet.
+
 </Steps>
