@@ -1,7 +1,6 @@
-const { createPreset } = require("fumadocs-ui/tailwind-plugin");
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import { createPreset } from "fumadocs-ui/tailwind-plugin";
+import { Config } from "tailwindcss";
+const config: Config = {
   darkMode: "class",
   content: [
     "./components/**/*.{ts,tsx}",
@@ -55,3 +54,4 @@ module.exports = {
   },
   presets: [createPreset()],
 };
+export default config;
