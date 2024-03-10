@@ -9,7 +9,6 @@ before_script:
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
 deploy_staging:
-  type: deploy
   script:
     - ssh $SSH_HOST "export NODE_OPTIONS=--max-old-space-size=8192;
       cd /var/www/anycode-docs && git pull && pnpm i;
