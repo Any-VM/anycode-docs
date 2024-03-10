@@ -1,12 +1,12 @@
 include: "https://gitlab.com/gitlab-cd/ssh-template/raw/master/ssh.yml"
 
 before_scripts:
+  script:
   - ssh_init "$SSH_PRIVATE_KEY" "$SSH_HOST"
 promote:
-stage: deploy
-script:
-  - ssh $SSH_HOST "export NODE_OPTIONS=--max-old-space-size=8192;
-    cd /var/www/anycode-docs && git pull && pnpm i;
-    /root/.local/share/pnpm/pm2 stop anycode-docs;
-    pnpm build;
-    /root/.local/share/pnpm/pm2 start anycode-docs"
+  script:
+    - ssh $SSH_HOST "export NODE_OPTIONS=--max-old-space-size=8192;
+      cd /var/www/anycode-docs && git pull && pnpm i;
+      /root/.local/share/pnpm/pm2 stop anycode-docs;
+      pnpm build;
+      /root/.local/share/pnpm/pm2 start anycode-docs"
