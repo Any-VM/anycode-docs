@@ -21,7 +21,7 @@ export const layoutOptions: Omit<DocsLayoutProps, "children"> = {
       {
         label: "GitLab",
         href: "https://gitlab.anyvm.tech/anyvm/anycode-docs",
-        icon: <Gitlab className="h-6 w-6" />
+        icon: <Gitlab className="h-8 w-8 text-foreground" />
       }
     ],
   },
