@@ -1,4 +1,4 @@
-import { AnyVM, Discord } from "@/components/icons";
+import { AnyVM, Discord, Gitlab } from "@/components/icons";
 import { pageTree } from "../source";
 import { DocsLayout, type DocsLayoutProps } from "fumadocs-ui/layout";
 import type { ReactNode } from "react";
@@ -12,13 +12,17 @@ export const layoutOptions: Omit<DocsLayoutProps, "children"> = {
       </>
     ),
     transparentMode: "top",
-    githubUrl: "https://github.com/any-vm/anycode-docs",
     links: [
       {
         label: "Discord",
         href: "https://discord.gg/6cpcbKwjBn",
         icon: <Discord className="h-6 w-6" />,
       },
+      {
+        label: "GitLab",
+        href: "https://gitlab.anyvm.tech/anyvm/anycode-docs",
+        icon: <Gitlab className="h-6 w-6" />
+      }
     ],
   },
 };

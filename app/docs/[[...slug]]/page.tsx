@@ -24,12 +24,12 @@ export default async function Page({
       tableOfContent={{
         footer: (
           <a
-            href={`https://github.com/any-vm/anycode-docs/blob/main/${path}`}
+            href={`https://gitlab.anyvm.tech/anyvm/anycode-docs/-/tree/main/${path}`}
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center text-xs text-muted-foreground hover:text-foreground"
           >
-            Edit on Github <ExternalLinkIcon className="ml-1 size-3" />
+            Edit on GitLab <ExternalLinkIcon className="ml-1 size-3" />
           </a>
         ),
       }}
