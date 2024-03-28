@@ -57,7 +57,7 @@ export default function Home() {
           </section>
         </div>
         <section className="mb-20">
-          <h2 className="text-3xl font-bold my-8">Features</h2>
+          <h2 className="my-8"></h2>
           <div className="w-full flex flex-col lg:flex-row">
             {tagLines.map((tagLine) => (
               <Card
