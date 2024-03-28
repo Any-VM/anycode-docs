@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main className="bg-gradient-to-b from-background to-muted min-h-screen">
       <div className="flex mx-20 flex-col min-h-screen items-center">
-        <div className="flex-col flex h-screen justify-center items-center -mt-48">
+        <div className="flex-col flex justify-center items-center">
           <AnyVM className="h-96 w-96" />
           <h1 className="font-sans text-5xl font-bold text-transparent bg-gradient-to-tr from-muted-foreground to-foreground  bg-clip-text">
             AnyCode
@@ -56,20 +56,19 @@ export default function Home() {
             </Button>
           </section>
         </div>
-        <section className="mb-20 -mt-48">
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold my-8">Features</h2>
           <div className="w-full flex flex-col lg:flex-row">
             {tagLines.map((tagLine) => (
               <Card
                 key={tagLine.header}
-                className="flex flex-col items-center w-84 h-auto justify-center p-4 m-2"
+                className="flex flex-col items-center w-auto h-auto justify-center p-4 m-2"
               >
                 <CardHeader className="font-bold text-2xl flex flex-row text-nowrap">
                   {tagLine.icon}
                   {tagLine.header}
                 </CardHeader>
-                <CardContent className="text-center">
-                  {tagLine.body}
-                </CardContent>
+                <CardContent className="text-left">{tagLine.body}</CardContent>
               </Card>
             ))}
           </div>
