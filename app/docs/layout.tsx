@@ -1,4 +1,4 @@
-import { AnyVM, Discord, Github } from "@/components/icons";
+import { AnyVM, Discord, GitHub } from "@/components/icons";
 import { pageTree } from "../source";
 import { DocsLayout, type DocsLayoutProps } from "fumadocs-ui/layout";
 import type { ReactNode } from "react";
@@ -19,9 +19,9 @@ export const layoutOptions: Omit<DocsLayoutProps, "children"> = {
         icon: <Discord className="h-6 w-6" />,
       },
       {
-        label: "Github",
+        label: "GitHub",
         href: "https://github.com/any-VM/anycode-docs",
-        icon: <Gitlab className="size-12" />,
+        icon: <GitHub className="size-12" />,
       },
     ],
   },
