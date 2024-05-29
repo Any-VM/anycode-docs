@@ -3,7 +3,6 @@ import Link from "next/link";
 export function Credits() {
   const contributorGithub = [
     "anshnk",
-    "incognitotgt",
     "jeseki83",
     "localuser-isback",
     "lolzthedev",
